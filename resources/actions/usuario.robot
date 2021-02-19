@@ -7,23 +7,23 @@ Open Page Create
 
 Create User
     [Arguments]           ${email}        ${nome1}         ${nome2}        ${senha}     ${dia}       ${mes}     ${ano}    ${casa}     ${endereco}      ${cidade}     ${estado}    ${cep}    ${tel}
-    Input Text                   ${CAMPO_EMAIL_CAD}        ${email}
-    Click Element                      ${BOTAO_CRIAR}
-    Input Text                   ${PRIMEIRO_NOME}        ${nome1}
-    Input Text                   ${ULTIMO_NOME}          ${nome2}
-    Input Text                   ${CAMPO_SENHA_CAD}      ${senha} 
-    Input Text                   ${CAMPO_COMPANY}        ${casa} 
-    Input Text                   ${CAMPO_ENDERECO}       ${endereco}
-    Input Text                   ${CAMPO_CIDADE}         ${cidade}  
-    Select From List By Value           ${CAMPO_ESTADO}         ${estado}           
-    Input Text                   ${CAMPO_CEP}            ${cep}   
-    Input Text                   ${CAMPO_TEL}            ${tel}  
-    Input Text                   ${CAMPO_TEL_MOB}        ${tel}  
-    Input Text                   ${CAMPO_ADICIONAL}      ${casa}
-    Select Checkbox              ${RADIO_SEXO}  
-    Select From List By Value          css:#days                ${dia}     
-    Select From List By Value          css:#months              ${mes}      
-    Select From List By Value          css:#years               ${ano}      
-    Click Element               ${BOTAO_REGISTRAR} 
+    Fill Text                   ${CAMPO_EMAIL_CAD}        ${email}
+    Click                      ${BOTAO_CRIAR}
+    Fill Text                   ${PRIMEIRO_NOME}        ${nome1}
+    Fill Text                   ${ULTIMO_NOME}          ${nome2}
+    Fill Text                   ${CAMPO_SENHA_CAD}      ${senha} 
+    Fill Text                   ${CAMPO_COMPANY}        ${casa} 
+    Fill Text                   ${CAMPO_ENDERECO}       ${endereco}
+    Fill Text                   ${CAMPO_CIDADE}         ${cidade}  
+    Fill Text                   ${CAMPO_CEP}            ${cep}   
+    Fill Text                   ${CAMPO_TEL}            ${tel}  
+    Fill Text                   ${CAMPO_TEL_MOB}        ${tel}  
+    Fill Text                   ${CAMPO_ADICIONAL}      ${casa}
+    Check Checkbox              ${RADIO_SEXO}  
+    Select Options By           ${CAMPO_ESTADO}         ${estado}           
+    Select Options By           css=#days               attribute=value   
+    Select Options By           css=#months             attribute=value
+    Select Options By           css=#years               attribute=value
+    Click               ${BOTAO_REGISTRAR} 
 
 

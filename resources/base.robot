@@ -1,7 +1,7 @@
 ***Settings***
 Documentation       Aqui temos a estrutura base do projeto, o selenium é importado aqui
 
-Library     SeleniumLibrary
+Library     Browser
 
 Resource    controller_kws.robot
 Resource    actions/usuario.robot
@@ -15,7 +15,7 @@ ${login_url}    http://automationpractice.com/index.php?controller=authenticatio
 ***Keywords***
 ##Hooks 
 Open Session
-    Open Browser    about:blank      chrome
+    Open Browser    about:blank      chromium
 
 Close Session
     Close Browser
